@@ -1,28 +1,23 @@
 # UART-RS-232-Interface
 
+<img src="https://github.com/Aatib-cpu/Aatib-cpu/blob/main/uart_serial_data_stream.jpg" alt="logo" style="width: 100%;">
+
 ## Overview
 
-The UART (Universal Asynchronous Receiver/Transmitter) peripheral enables serial communication between the FPGA and external devices. This documentation provides an overview of the UART peripheral, its features, configuration options, usage guidelines, and support information.
-
-## Features
-
-- **Serial Communication**: The UART peripheral facilitates asynchronous serial communication with external devices.
-  
-- **Configurable Parameters**: user can configure the baud rate as per their communication requirements.
-  
-- **Transmit and Receive modules**: The UART peripheral includes separate modules for transmitting and receiving data, allowing for efficient data transfer.
+UART (Universal Asynchronous Receiver/Transmitter) is a hardware communication protocol that enables asynchronous serial data transmission, meaning no shared clock signal is required between the sender and receiver. The UART peripheral facilitates serial communication between the FPGA and external devices. This document outlines the UART peripheral’s functionality, key features, configuration options, usage instructions, and support resources.
 
 ## Configuration
 
-To configure the UART peripheral, user has to pass configuration frame which is mentioned below to update the value of the configuration register of UART. 
+To configure the UART peripheral, user has to pass configuration frame which is mentioned below to update the value of the configuration register of UART 
 
     
-1. `BAUD_RATE`: It Specifies the baud rate for serial communication. To configure the baud rate of uart we have to pass the value of clk_per_bit as the configuration value which can be calculated as per above formula -
+1. `BAUD_RATE`: It Specifies the baud rate for serial communication. Buad rate defines the number of bits transfer per second. For example if baud-rate is 9600 means 9600 bits transfer in one second. To configure the baud rate of uart we have to pass the value of clk_per_bit as the configuration value which can be calculated as per above formula -
 
     ```
     Formula :
         clks per bit = (system clk) / (baud rate)
     ```
+    clock per bit defines the number of clock counts for each bit transfer
     
     Example:
 
