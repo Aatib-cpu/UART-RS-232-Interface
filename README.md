@@ -1,6 +1,6 @@
 # UART-RS-232-Interface
 
-<img src="https://github.com/Aatib-cpu/Aatib-cpu/blob/documentation/uart_serial_data_stream.jpg" alt="logo" style="width: 100%;">
+<img src="https://github.com/Aatib-cpu/UART-RS-232-Interface/blob/documentation/uart_serial_data_stream.jpg" alt="logo" style="width: 100%;">
 
 ## Overview
 
