@@ -20,6 +20,6 @@ clock per bit defines the number of clock counts for each bit transfer.
     hence,
     ```
         clks_per_bit = 100000000/9600
-        clks_per_bit = 10417 
-        in code, uart_config_data = 32'd10417;
+        clks_per_bit = 10417
+        in code, clk_per_bit = 32'd10417;
     ```
