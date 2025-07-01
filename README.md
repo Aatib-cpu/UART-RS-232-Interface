@@ -23,10 +23,3 @@ clock per bit defines the number of clock counts for each bit transfer.
         clks_per_bit = 10417 
         in code, uart_config_data = 32'd10417;
     ```
-
-## Usage
-**Data Transmission and Reception**: UART transmit and receive interfaces used to send and receive data over the serial interface.
-
-## Support
-
-This documentation provides an overview of the UART peripheral, including its features, configuration options, usage guidelines, and support information.
