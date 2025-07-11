@@ -21,5 +21,5 @@ clks_per_bit = 100000000/9600
 clks_per_bit = 10417
 in code,
 ```
-    clk_per_bit = 32'd10417;
+clk_per_bit = 32'd10417;
 ```
