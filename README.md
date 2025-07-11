@@ -18,8 +18,8 @@ Configuration frame :
 Let's assume the system clk frequency is 100MHz and the slave id of uart is 1,the configuration id to configure baud-rate is 0, and we want to configure it to run on baud rate of 9600 bps.
 
 hence,
-    clks_per_bit = 100000000/9600
-    clks_per_bit = 10417
+    clks_per_bit = 100000000/9600;
+    clks_per_bit = 10417;
     in code,
 ```
 clk_per_bit = 32'd10417;
